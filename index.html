@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT-WEB-05 C2</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Dont make any changes here -->
+    <h1>Hospital - Doctor Records</h1>
+
+    <div>
+      <!-- ***** We are using form here  ****  -->
+      <form>
+        <label for="">Doctor Name</label><br />
+        <input id="name" type="text" placeholder="Enter Doctor Name" /><br />
+        <label for="">Doctor ID</label><br />
+        <input
+          id="docID"
+          type="number"
+          placeholder="Enter Doctor ID"
+        /><br />
+        <label for="">Specialization </label><br />
+        <select id="dept">
+          <option value="">Select Specialization</option>
+          <option value="Dermatologist">Dermatologist</option>
+          <option value="ENT">ENT</option>
+          <option value="Dentist">Dentist</option>
+          <option value="COVID">COVID</option>
+          <option value="Gynecologist">Gynecologist</option></select
+        ><br />
+        <label for="">Experience </label><br />
+        <input id="exp" type="number" placeholder="Experience in Years" /><br />
+        <label for="">Email Address </label><br />
+        <input type="text" id="email" placeholder="Enter Email Address" /><br />
+        <label for="">Mobile Number </label><br />
+        <input id="mbl" type="number" placeholder="Enter Mobile number" /><br />
+        <input type="submit" />
+      </form>
+      <table>
+        <!-- Dont change order of columns -->
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Doctor ID</th>
+            <th>Specialization</th>
+            <th>Experience in years</th>
+            <th>Email address</th>
+            <th>Mobile Number</th>
+            <th>Role</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
