@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom stack</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">STACK ARRAY</h1>
+    ;
+  </body>
+  <script>
+    class Stack {
+      constructor() {
+        this.length = 0;
+        this.stack = [];
+      }
+      push(...rest) {
+        rest.forEach((el) => {
+          let index = this.length;
+          this.stack[index] = el;
+          this.length++;
+        });
+      }
+      pop() {
+        const topIndex = this.length - 1;
+        const storedEl = this.stack[topIndex];
+        delete this.stack[topIndex];
+        this.length--;
+        return storedEl;
+      }
+      peek() {
+        let topIndex = this.length - 1;
+        return this.stack[topIndex];
+      }
+      isEmpty() {
+        return this.length === 0;
+      }
+    }
+
+    const stk = new Stack();
+    stk.push(1, 2, 3, 4, 5);
+    console.log(stk.Stack);
+
+    stk.pop();
+    console.log(stk.pop());
+    console.log(stk.Stack);
+
+    console.log(stk.peek());
+    console.log(stk.isEmpty() ? "Empty" : "not empty");
+
+    stk.pop();
+    stk.pop();
+    stk.pop();
+
+    console.log(stk.isEmpty() ? "Empty" : "not empty");
+  </script>
+</html>

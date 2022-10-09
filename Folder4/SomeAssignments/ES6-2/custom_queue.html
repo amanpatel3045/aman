@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queue</title>
+  </head>
+
+  <body>
+    <h1 style="text-align: center">Queue</h1>
+  </body>
+  <script>
+    class Queue {
+      constructor() {
+        this.elements = {};
+        this.head = 0;
+        this.tail = 0;
+      }
+      enqueue(element) {
+        this.elements[this.tail] = element;
+        this.tail++;
+      }
+      dequeue() {
+        const item = this.elements[this.head];
+        delete this.elements[this.head];
+        this.head++;
+        return item;
+      }
+      isEmpty() {
+        return this.elements.length == 0;
+      }
+      enqueuethree(...rest) {
+        rest.forEach((el) => {
+          let index = (this.elements = {});
+          this.Queue[index] = el;
+          this.length++;
+        });
+      }
+      dequeueThree() {
+        for (var i = 0; i < 3; i++) {
+          const item = this.elements[this.head];
+          if (isEmpty(item)) {
+            console.log("queue is empty");
+          }
+          delete this.elements[this.head];
+          this.head++;
+          return item;
+        }
+      }
+    }
+  </script>
+</html>
