@@ -1,0 +1,29 @@
+body {
+  background: #151315;
+  color: white;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 31px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+a {
+  text-decoration: none;
+}
+.title {
+  font-size: 40px;
+  margin-top: -10px;
+  color: white;
+}
+.movies {
+  margin-right: 300px;
+  font-size: 20px;
+  color: white;
+}
+.search {
+  font-size: 20px;
+  color: white;
+}

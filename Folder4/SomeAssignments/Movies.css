@@ -1,0 +1,23 @@
+#container {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+}
+#des {
+  margin-left: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#name {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+#plot {
+  font-size: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+#imdb {
+  font-size: 20px;
+  color: gold;
+  margin-bottom: 11px;
+}

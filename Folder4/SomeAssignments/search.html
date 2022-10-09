@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="./search.css" />
+    <title>navbar</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <div>
+        <a href="index.html"><div class="title">NETFLIX</div></a>
+      </div>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <div>
+        <a href="./search.html"><div class="search">Search</div></a>
+      </div>
+      <div>
+        <a href="./Movies.html"><div class="movies">Movies</div></a>
+      </div>
+    </div>
+    <div id="container">
+      <div>
+        <div class="inp">
+          <input oninput="getData()" id="inputBox" type="text" />
+          <button>Search</button>
+        </div>
+        <div id="searchBox"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./index.js"></script>
