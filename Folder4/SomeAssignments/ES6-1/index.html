@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/b678f324bd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./index.css" />
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <div id="navbar">
+      <div>
+        <a href="index.html"><img id="logo" src="https://www.logo.wine/a/logo/YouTube/YouTube-Logo.wine.svg"
+            alt="" /></a>
+      </div>
+      <div>
+        <form action="">
+          <input id="searchInput" type="text" /><button id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <div id="filter">
+    <select id="filter-by-time" onchange="handleDate()">
+      <option value="">Upload Date</option>
+      <option value="hour">Last Hour</option>
+      <option value="week">This Week</option>
+      <option value="month">This Month</option>
+      <option value="year">This Year</option>
+    </select>
+    <select id="filter-by-type" onchange="handleType()">
+      <option value="">Type</option>
+      <option value="Video">Video</option>
+      <option value="channel">Channel</option>
+      <option value="movie">Movie</option>
+      <option value="playlist">Playist</option>
+    </select>
+  </div>
+  <div id="contentBox"></div>
+</body>
+
+</html>
+<script src="./index.js"></script>
